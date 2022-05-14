@@ -42,7 +42,7 @@ gulp.task('styles:compile', function buildStyles() {
 
 // sprite
 gulp.task('sprite', function buildSprite(cb) {
-    var spriteData = gulp.src('./source/images/icons/*.png').pipe(spritesmith({
+    const spriteData = gulp.src('./source/images/icons/*.png').pipe(spritesmith({
         imgName: 'sprite.png',
         imgPath: '../images/sprite.png',
         cssName: 'sprite.scss'
