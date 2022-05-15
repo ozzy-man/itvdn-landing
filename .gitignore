@@ -23,6 +23,8 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+.idea/
 build
-nodu_modules
+node_modules
 npm-debug.log
+package-lock.json
