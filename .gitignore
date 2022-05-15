@@ -23,6 +23,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+.idea/
 build
 node_modules
 npm-debug.log
