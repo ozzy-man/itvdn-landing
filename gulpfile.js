@@ -70,14 +70,20 @@ gulp.task('copy:fonts', function fontsCopy() {
         .pipe(gulp.dest('./build/fonts'));
 });
 
+// copy webfonts
+gulp.task('copy:webfonts', function webfontsCopy() {
+    return gulp.src('./source/webfonts/**/*')
+        .pipe(gulp.dest('./build/webfonts'));
+});
+
 // copy images
 gulp.task('copy:images', function imagesCopy() {
-    return gulp.src('./source/images/**/*')
+    return gulp.src('./source/images/**/*.*')
         .pipe(gulp.dest('./build/images'));
 });
 
 // copy
-gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images'));
+gulp.task('copy', gulp.parallel('copy:fonts', 'copy:webfonts', 'copy:images'));
 
 // watchers
 gulp.task('watch', function myWatchers() {
