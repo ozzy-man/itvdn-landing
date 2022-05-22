@@ -65,10 +65,10 @@ gulp.task('clean', function del(cb) {
 });
 
 // copy fonts
-gulp.task('copy:fonts', function fontsCopy() {
-    return gulp.src('./source/fonts/**/*')
-        .pipe(gulp.dest('./build/fonts'));
-});
+//gulp.task('copy:fonts', function fontsCopy() {
+//    return gulp.src('./source/fonts/**/*')
+//        .pipe(gulp.dest('./build/fonts'));
+//});
 
 // copy webfonts
 gulp.task('copy:webfonts', function webfontsCopy() {
@@ -83,7 +83,8 @@ gulp.task('copy:images', function imagesCopy() {
 });
 
 // copy
-gulp.task('copy', gulp.parallel('copy:fonts', 'copy:webfonts', 'copy:images'));
+//gulp.task('copy', gulp.parallel('copy:fonts', 'copy:webfonts', 'copy:images'));
+gulp.task('copy', gulp.parallel('copy:webfonts', 'copy:images'));
 
 // watchers
 gulp.task('watch', function myWatchers() {
