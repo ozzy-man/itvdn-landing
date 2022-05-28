@@ -1,7 +1,12 @@
 .work {
-  padding: 110px 0;
+  padding: 106px 0;
   background-color: #de2b24;
   color: #fff;
+
+  @media (max-width: 985px) {
+    padding-bottom: 20px;
+    padding-top: 30px;
+  }
 
   &__list {
     display: flex;

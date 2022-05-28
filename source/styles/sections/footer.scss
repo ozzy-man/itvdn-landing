@@ -6,13 +6,13 @@
   }
 
   &__bottom {
-    padding: 26px;
+    padding: 24px;
     text-align: center;
     background: #515151;
   }
 
   &__title {
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     font-size: 1.8125rem;
     color: #fff;
     font-family: $ff-main-bold;
@@ -34,7 +34,7 @@
   }
 
   &__links {
-    padding-bottom: 35px;
+    padding-bottom: 48px;
     color: #fff;
 
     .fab {
@@ -64,7 +64,7 @@
 
   .button {
     border: 2px solid #515151;
-    padding: 15px 37px;
+    padding: 15px 35px;
     box-sizing: border-box;
     font-size: 1.0625rem;
     font-family: $ff-main-bold;
