@@ -35,6 +35,9 @@
   .arrow-down {
     @include centerer-xy();
 
+    padding: 20px;
+    cursor: pointer;
+
     .fas {
       font-size: 1.6rem;
     }
