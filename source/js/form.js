@@ -22,6 +22,15 @@
     form.classList.add('is-hidden');
   };
 
+  // home work for lesson-9
+  window.onkeydown = function (event) {
+    if (event.keyCode == 27) {
+      // console.log('escape pressed');
+        ITVDN.form.close();
+    }
+  };
+  //--------------
+  
   me.isValid = function () {
     var requiredFields = document.querySelectorAll('[data-valid="required"]');
     var emailValue = document.querySelector('[data-email]').value;
